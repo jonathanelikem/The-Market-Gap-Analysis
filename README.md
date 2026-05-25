@@ -9,7 +9,9 @@ Analysis of 1 million food products from the Open Food Facts database reveals a 
 
 **B: Project Links**
 Link To Notebook : https://colab.research.google.com/drive/1aDx3Nv6pMR9hY_c6WJ0RONQAQ5A97kTK?usp=sharing
+
 Link to Dashboard : https://app.powerbi.com/links/SHyxW_Oc-d?ctid=941bbf5f-f2c0-4875-a24c-6907865d251a&pbi_source=linkShare
+
 Link to Presentation : https://docs.google.com/presentation/d/1i-FkJv1zfJvahsrKeU-S4qVXDNFAO27abVEtp_FnbqQ/edit?usp=sharing
 
 
