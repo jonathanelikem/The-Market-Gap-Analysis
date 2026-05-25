@@ -4,7 +4,22 @@
 **Deliverable:** Interactive Dashboard, Code Notebook & Insight Presentation
 
 ---
+**A. Executive Summary**
+Analysis of 1 million food products from the Open Food Facts database reveals a significant market gap in the global snack aisle: the vast majority of products are high in sugar and low in protein, leaving health-conscious consumers underserved. Using a Gap Ratio model combining product density, Nutri-Score health grades, and brand competition across 8 product categories, Fruit Snacks emerged as the most underserved category with a Gap Ratio of 55.2 — nearly double that of the next closest category, Chocolate & Confectionery at 27.9. Despite 85% of Chocolate & Confectionery and 81.6% of Biscuits & Cookies products scoring Nutri-Score D or E, only 62 unique brands currently occupy the high-protein, low-sugar opportunity zone in Fruit Snacks, signalling minimal competition. Based on the data, the biggest market opportunity is in Fruit Snacks, specifically targeting products with 20g of protein and less than 2.4g of sugar per 100g.
 
+**B: Project Links**
+Link To Notebook : https://colab.research.google.com/drive/1aDx3Nv6pMR9hY_c6WJ0RONQAQ5A97kTK?usp=sharing
+Link to Dashboard : https://app.powerbi.com/links/SHyxW_Oc-d?ctid=941bbf5f-f2c0-4875-a24c-6907865d251a&pbi_source=linkShare
+Link to Presentation : https://docs.google.com/presentation/d/1i-FkJv1zfJvahsrKeU-S4qVXDNFAO27abVEtp_FnbqQ/edit?usp=sharing
+
+
+**C. Candidate's Choice — Three-Signal Recommendation Engine**
+Most market gap analyses stop at one chart — typically a scatter plot showing where products cluster. I added a multi-signal scoring system that combines three independent data sources to produce a recommendation that is statistically defensible rather than based on visual intuition alone.
+The three signals are:
+Signal 1 — Gap Ratio. Calculated as total products in a category divided by products already in the healthy quadrant. Fruit Snacks scored 55.2, meaning for every healthy Fruit Snack product that exists, there are 55 unhealthy ones. That ratio is nearly double the next closest category.
+Signal 2 — Nutri-Score unhealthiness rate. The percentage of products in each category scoring D or E on the official European Nutri-Score system. Chocolate & Confectionery (85%) and Biscuits & Cookies (81.6%) are the unhealthiest by grade, but Fruit Snacks still scores 27.8% — confirming a meaningful portion of the category is still nutritionally poor despite appearing "natural."
+Signal 3 — Brand competition in the Opportunity Zone. Counts how many unique brands already hold the high-protein, low-sugar position per category. Fruit Snacks had only 62 brands there — the lowest of all named categories — meaning the healthy Fruit Snacks shelf is almost empty.
+Why this adds value: A category could score well on one signal by coincidence. Fruit Snacks scoring worst on all three simultaneously — highest gap, low but meaningful unhealthy rate, and least competition — makes the recommendation convergent and hard to argue against in front of an R&D team or investor. This is the kind of triangulated evidence that turns a data project into a business case.
 ## 1. Business Context
 **Helix CPG Partners** advises major food manufacturers on new product development. Our newest client, a global snack manufacturer, wants to launch a "Healthy Snacking" line. They believe the market is oversaturated with sugary treats, but they lack the data to prove where the specific gaps are.
 
