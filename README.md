@@ -16,10 +16,14 @@ Link to Presentation : https://docs.google.com/presentation/d/1i-FkJv1zfJvahsrKe
 **C. Candidate's Choice — Three-Signal Recommendation Engine**
 Most market gap analyses stop at one chart — typically a scatter plot showing where products cluster. I added a multi-signal scoring system that combines three independent data sources to produce a recommendation that is statistically defensible rather than based on visual intuition alone.
 The three signals are:
+
 Signal 1 — Gap Ratio. Calculated as total products in a category divided by products already in the healthy quadrant. Fruit Snacks scored 55.2, meaning for every healthy Fruit Snack product that exists, there are 55 unhealthy ones. That ratio is nearly double the next closest category.
+
 Signal 2 — Nutri-Score unhealthiness rate. The percentage of products in each category scoring D or E on the official European Nutri-Score system. Chocolate & Confectionery (85%) and Biscuits & Cookies (81.6%) are the unhealthiest by grade, but Fruit Snacks still scores 27.8% — confirming a meaningful portion of the category is still nutritionally poor despite appearing "natural."
+
 Signal 3 — Brand competition in the Opportunity Zone. Counts how many unique brands already hold the high-protein, low-sugar position per category. Fruit Snacks had only 62 brands there — the lowest of all named categories — meaning the healthy Fruit Snacks shelf is almost empty.
-Why this adds value: A category could score well on one signal by coincidence. Fruit Snacks scoring worst on all three simultaneously — highest gap, low but meaningful unhealthy rate, and least competition — makes the recommendation convergent and hard to argue against in front of an R&D team or investor. This is the kind of triangulated evidence that turns a data project into a business case.
+
+**Why this adds value:** A category could score well on one signal by coincidence. Fruit Snacks scoring worst on all three simultaneously — highest gap, low but meaningful unhealthy rate, and least competition — makes the recommendation convergent and hard to argue against in front of an R&D team or investor. This is the kind of triangulated evidence that turns a data project into a business case.
 ## 1. Business Context
 **Helix CPG Partners** advises major food manufacturers on new product development. Our newest client, a global snack manufacturer, wants to launch a "Healthy Snacking" line. They believe the market is oversaturated with sugary treats, but they lack the data to prove where the specific gaps are.
 
